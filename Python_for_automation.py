@@ -75,9 +75,6 @@ if __name__ == '__main__':
         elif 'open youtube' in query:
             webbrowser.open('https://www.youtube.com')
             
-        elif 'open great learning' in query:
-            webbrowser.open("https://www.greatlearning.in/")
-            
         elif 'open google' in query:
             webbrowser.open('google.com')
             
@@ -87,6 +84,9 @@ if __name__ == '__main__':
             
         elif 'open great learning youtube channel' in query:
             webbrowser.open("https://www.youtube.com/user/beaconelearning")
+            
+        elif 'open great learning' in query:
+            webbrowser.open("https://www.greatlearning.in/")
             
         elif 'open linkedin' in query:
             webbrowser.open("www.linkedin.com")
