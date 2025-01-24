@@ -24,4 +24,4 @@ Ensure you have Python installed on your system. You will also need the followin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Priyapoojary11/voice_assistant.git
+   git clone https://github.com/Priyapoojary11/Projects/voice_assistant.git
