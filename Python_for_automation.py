@@ -28,7 +28,7 @@ def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening to you Priya ....")
-        r.pause_threshould = 1 #if voice not clear then ask again
+        r.pause_threshold = 1 #if voice not clear then ask again
         audio = r.listen(source)
         
     try:
@@ -59,10 +59,22 @@ if __name__ == '__main__':
         if 'open wikipedia' in query:
             speak('Searching wikipedia ....')
             query = query.replace("wikipedia","")
-            results = wikipedia.summary(query, sentences =2)
-            speak("According to wikipedia")
-            print(results)
-            speak(results)
+            try:
+                results = wikipedia.summary(query, sentences =2)
+                speak("According to wikipedia")
+                print(results)
+                speak(results)
+            except wikipedia.exceptions.DisambiguationError as e:
+                speak("There were multiple results, please be more specific.")
+                print(e.options)
+            except wikipedia.exceptions.HTTPTimeoutError:
+                speak("I couldn't connect to Wikipedia, please try again later.")
+            except Exception as e:
+                speak("Sorry, I couldn't find any information.")
+                print(e)
+        
+        # if 'open wikipedia' in query:
+        #     webbrowser.open("https://www.wikipedia.org/")
             
         if 'open notepad' in query:
             npath ="C:\\Windows\\System32\\notepad.exe"
