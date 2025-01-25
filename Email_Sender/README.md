@@ -22,4 +22,4 @@ Follow these steps to set up the project on your machine:
    Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/Priyapoojary11/email_sender.git
+   git clone https://github.com/Priyapoojary11/Projects/Email_Sender.git
