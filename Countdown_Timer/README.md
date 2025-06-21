@@ -18,4 +18,4 @@ This Python script implements a simple countdown timer that allows users to inpu
 ## Example Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Priyapoojary11/Projects/countdown-timer.git
+   git clone https://github.com/Priyapoojary11/Projects/Countdown-Timer.git
