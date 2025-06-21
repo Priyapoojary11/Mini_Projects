@@ -27,4 +27,4 @@ This project is a simple Python-based quiz game that asks a set of multiple-choi
 ## Example Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Priyapoojary11/Projects/quiz-code.git
+   git clone https://github.com/Priyapoojary11/Projects/Quiz-Code.git
